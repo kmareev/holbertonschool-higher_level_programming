@@ -3,18 +3,14 @@ This is my first Python programming project.
 
 
 ## Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google.
 
 
 ## General
 How to use the Python interpreter
-
 How to print text and variables using print
-
 How to use strings
-
 What are indexing and slicing in Python
-
 What is the official Python coding style and how to check your code with pycodestyle
 
 
@@ -32,6 +28,4 @@ What is the official Python coding style and how to check your code with pycodes
 
 
 ## More Info
-Pycodestyle
-
-Pycodestyle is now the new standard of Python style code
+Follow Pycodestyle
