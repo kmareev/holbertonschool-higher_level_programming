@@ -6,8 +6,7 @@ last_digit = abs(number) % 10
 # Adjusts the sign of the last digit if negative
 if number < 0:
     last_digit *= -1
-# Prints the number and its lastd digit
-    print("Last digit of", number, "is", last_digit, end=" ")
+print("Last digit of", number, "is", last_digit, end=" ")
 
 if number > 5:
     print("and is greater than 5")
