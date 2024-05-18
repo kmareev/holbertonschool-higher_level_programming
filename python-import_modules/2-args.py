@@ -6,7 +6,7 @@ if __name__ == "__main__":
     num_args = len(sys.argv)
 
     if num_args == 1:
-        print("No arguments passed.")
+        print("0 arguments.")
     elif num_args == 2:
         print("1 argument:")
         print("1: {}".format(sys.argv[1]))
