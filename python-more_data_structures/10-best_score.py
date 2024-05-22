@@ -7,8 +7,3 @@ def best_score(a_dictionary):
             if value == max_score:
                 return key
     return None
-
-
-
-
-
