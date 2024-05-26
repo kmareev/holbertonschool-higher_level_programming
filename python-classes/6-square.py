@@ -18,7 +18,7 @@ class Square:
     def size(self):
         """Getter for the current size of the Square."""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """Setter for the current size of the Square.
@@ -51,8 +51,7 @@ class Square:
                 or not all(i >= 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
-
-
+    
     def area(self):
         """Calculates the area of the square.
 
