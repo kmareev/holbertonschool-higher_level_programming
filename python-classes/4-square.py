@@ -15,14 +15,16 @@ class Square:
 
     @property
     def size(self):
-        print("Retrieving the Size")
+        """Getter for the current size of the Square."""
         return self.__size
     
     @size.setter
     def size(self, value):
-        """Raises:
-        TypeError: if size is not an int.
-        ValueError: if size is less than 0.
+        """Setter for the current size of the Square.
+        
+        Raises:
+            TypeError: if size is not an int.
+            ValueError: if size is less than 0.
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
