@@ -1,0 +1,13 @@
+The ``matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+First import ``matrix_divided`` from the ``2-matrix_divided`` file:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+    Tests:
+        >>> matrix_divided()
+        Traceback (most recent call last):
+        TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
