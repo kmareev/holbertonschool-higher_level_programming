@@ -5,7 +5,7 @@
 class Rectangle:
     """Represents a Rectangle."""
 
-    number_of_instances = 0  # Class attribute to keep track of the
+    number_of_instances = 0  # Class attribute to keep track of the \
                              # number of instances
 
     def __init__(self, width=0, height=0):
