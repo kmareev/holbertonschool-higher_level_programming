@@ -7,7 +7,7 @@ class Rectangle:
 
     number_of_instances = 0  # Class attribute to keep track of the \
     # number of instances
-    print_symbol = '#' # Class attribute for symbol used in \
+    print_symbol = '#'  # Class attribute for symbol used in \
     # string representation
 
     def __init__(self, width=0, height=0):
