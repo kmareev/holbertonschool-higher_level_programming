@@ -4,7 +4,7 @@
 
 class Rectangle:
     """Represents a Rectangle."""
-    
+
     def __init__(self, width=0, height=0):
         """Initializes a new rectangle stance.
         Args:
@@ -19,7 +19,7 @@ class Rectangle:
     def width(self):
         """Getter for the current width of the rectangle."""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """Setter for the current width of the rectangle.
@@ -37,9 +37,9 @@ class Rectangle:
 
     @property
     def height(self):
-         """Getter for the current height of the rectangle."""
-         return self.__height
-    
+        """Getter for the current height of the rectangle."""
+        return self.__height
+
     @height.setter
     def height(self, value):
         """Setter for the current height of the rectangle.
