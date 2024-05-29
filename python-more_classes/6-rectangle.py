@@ -5,7 +5,7 @@
 class Rectangle:
     """Represents a Rectangle."""
 
-    numb_of_instances = 0 # Class attribute to keep track of the 
+    number_of_instances = 0 # Class attribute to keep track of the 
                         # number of instances
 
     def __init__(self, width=0, height=0):
@@ -17,7 +17,7 @@ class Rectangle:
 
         self.width = width
         self.height = height
-        Rectangle.numb_of_instances += 1 #Incrementing number of instances
+        Rectangle.number_of_instances += 1 #Incrementing number of instances
 
     @property
     def width(self):
@@ -98,4 +98,4 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-        Rectangle.numb_of_instances -= 1
+        Rectangle.number_of_instances -= 1
