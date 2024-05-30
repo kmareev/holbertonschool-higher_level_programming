@@ -1,0 +1,27 @@
+The ``text_indentation`` module
+========================
+Using ``text_indentation`
+------------------------
+First import ``text_indentation`` from the ``5-text_indentation file:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    Test present: text= string
+    >>> text_indentation("Hi, holberton.")
+    Hi, holberton.
+
+
+    Test present: text= not string =>
+    TypeError: text must be a string
+    >>> text_indentation(1)
+    TypeError: text must be a string
+
+
+    Test present: missing one argument
+    >>> text_indentation()
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+    Test present: text= string with blank line
+    >>> text_indentation = "   "
+    >>> 
