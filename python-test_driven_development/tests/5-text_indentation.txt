@@ -7,12 +7,13 @@ First import ``text_indentation`` from the ``5-text_indentation file:
     >>> text_indentation = __import__('5-text_indentation').text_indentation
 
     Test present: text= string
-    >>> text_indentation("Hi, Holberton")
-    Hi, Holberton>>> 
+    >>> text_indentation("Hi Holberton")
+    Hi Holberton
 
 
     Test present: text= not string => TypeError: text must be a string
     >>> text_indentation(1)
+    Traceback (most recent call last):
     TypeError: text must be a string
 
 
