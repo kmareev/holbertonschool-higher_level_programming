@@ -37,3 +37,21 @@ First import ``base_geometry`` from the ``7-base_geometry`` file:
     Traceback (most recent call last):
     ...
     TypeError: score must be an integer
+
+    Test area()
+    >>> bg.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
+
+    Test integer validators
+    >>> bg.integer_validator("age", [13])
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+    >>> bg.integer_validator("age", (4,))
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+    >>> bg.integer_validator("age", True)
+
+
