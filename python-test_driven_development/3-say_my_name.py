@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""The module that prints first and last name"""
 
 def say_my_name(first_name, last_name=""):
     """
