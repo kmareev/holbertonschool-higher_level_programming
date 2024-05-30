@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module prints a text with 2 new lines after
-each o these charactesr '.', '?' and ':'"""
+each of these charactesr '.', '?' and ':'"""
+
 
 def text_indentation(text):
     """
