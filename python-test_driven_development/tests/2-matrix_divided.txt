@@ -37,3 +37,13 @@ First import ``matrix_divided`` from the ``2-matrix_divided`` file:
         >>> matrix_divided([[1, 2, 3], [4, 5, 6]], "holberton")
         Traceback (most recent call last):
         TypeError: div must be a number
+
+        Matrix with 0
+        >>> matrix_divided([[1, 2], [3, 4]], 0)
+        Traceback (most recent call last):
+        ZeroDivisionError: division by zero
+
+        Matrix with different row sizes
+        >>> matrix_divided([[1, 2, 3], [4, 5], [6, 7, 8]], 2)
+        Traceback (most recent call last):
+        TypeError: Each row of the matrix must have the same size
