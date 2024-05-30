@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module adds 2 integers"""
 
+
 def add_integer(a, b=98):
     """Adds two integers or floats.
 
@@ -16,7 +17,7 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    
+
     # Cast to integers if they are float
 
     a = int(a)
