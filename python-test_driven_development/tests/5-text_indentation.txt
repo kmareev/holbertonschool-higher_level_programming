@@ -25,4 +25,3 @@ First import ``text_indentation`` from the ``5-text_indentation file:
 
     Test present: text= string with blank line
     >>> text_indentation = "   "
-    >>> 
