@@ -53,5 +53,7 @@ First import ``base_geometry`` from the ``7-base_geometry`` file:
     TypeError: age must be an integer
 
     >>> bg.integer_validator("age", True)
+    Traceback (most recent call last):
+    TypeError: age must be an integer
 
 
