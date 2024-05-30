@@ -11,3 +11,25 @@ First import ``matrix_divided`` from the ``2-matrix_divided`` file:
         >>> matrix_divided()
         Traceback (most recent call last):
         TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+        Basic matrix division
+        >>> matrix_divided([[1, 2, 3], [4, 5, 6]], 4)
+        [[0.25, 0.5, 0.75], [1.0, 1.25, 1.5]]
+
+        Matrix with negative numbers
+        >>> matrix_divided([[-1, -2], [-3, -4]], -2)
+        [[0.5, 1.0], [1.5, 2.0]]
+
+        Matrix with decimal numbers
+        >>> matrix_divided([[0.5, 1.5], [2.5, 3.5]], 0.5)
+        [[1.0, 3.0], [5.0, 7.0]]
+
+        Non-list input
+        Traceback (most recent call last):
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+        Matrix with Non-Numeric Elements
+        >>> matrix_divided([[1, 'a'], [3, 4]], 2)
+        Traceback (most recent call last):
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+        
