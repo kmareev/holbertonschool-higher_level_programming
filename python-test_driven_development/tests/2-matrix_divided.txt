@@ -20,7 +20,7 @@ First import ``matrix_divided`` from the ``2-matrix_divided`` file:
         >>> matrix_divided([[-1, -2], [-3, -4]], -2)
         [[0.5, 1.0], [1.5, 2.0]]
 
-        Matrix with decimal numbers
+        Matrix with decimal numbers or float
         >>> matrix_divided([[0.5, 1.5], [2.5, 3.5]], 0.5)
         [[1.0, 3.0], [5.0, 7.0]]
 
@@ -33,3 +33,7 @@ First import ``matrix_divided`` from the ``2-matrix_divided`` file:
         Traceback (most recent call last):
         TypeError: matrix must be a matrix (list of lists) of integers/floats
         
+        Matrix with non integer or float
+        >>> matrix_divided([[1, 2, 3], [4, 5, 6]], "holberton")
+        Traceback (most recent call last):
+        TypeError: div must be a number
