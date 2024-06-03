@@ -17,16 +17,14 @@ FILENAME = "add_item.json"
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-def main():
-    """Main function to add command-line arguments to the list and save them."""
-    # Load existing items if the file exists, otherwise create an empty list
-    if os.path.exists(FILENAME):
-        items = load_from_json_file(FILENAME)
-    else:
-        items = []
+# Load existing items if the file exists, otherwise create an empty list
+if os.path.exists(FILENAME):
+    items = load_from_json_file(FILENAME)
+else:
+    items = []
 
-    # Add all command-line arguments to the list
-    items.extend(sys.argv[1:])
+# Add all command-line arguments to the list
+items.extend(sys.argv[1:])
 
-    # Save the updated list to the file
-    save_to_json_file(items, FILENAME)
+# Save the updated list to the file
+save_to_json_file(items, FILENAME)
