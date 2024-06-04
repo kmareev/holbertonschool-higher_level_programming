@@ -5,16 +5,16 @@ the Pascal's triangle of n."""
 
 def pascal_triangle(n):
     """Returns a list of lists of integers representing Pascal's triangle of n.
-    
+
     Args:
         n (int): The number of levels of Pascal's triangle to generate.
-        
+
     Returns:
         list: A list of lists of integers representing Pascal's triangle.
     """
     if n <= 0:
         return []
-    
+
     triangle = []
 
     for i in range(n):
