@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""In this implementation, the __init__ method initializes
-the first_name, last_name, and age attributes, and the to_json
-method returns a dictionary representation of a Student instance with
-these attributes."""
+"""In this implementation, the Student class initializes a student
+with first_name, last_name, and age, and provides a method
+to retrieve its attributes as a dictionary,
+optionally filtered by a list of attribute names."""
 
 
 class Student:
@@ -24,3 +24,10 @@ and age."""
                 if key in self.__dict__:
                     json_dict[key] = self.__dict__[key]
             return json_dict
+
+    def reload_from_json(self, json):
+        """Replaces all attributes of the Student instance
+with values from json dictionary"""
+        for key, value in json.items():
+            if key in self.__dict__:
+                setattr(self, key, value)
