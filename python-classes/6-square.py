@@ -70,3 +70,15 @@ class Square:
             for _ in range(self.size):
                 print(" " * self.__position[0], end="")
                 print("#" * self.size)
+    
+    def __str__(self):
+        """Returns a string representation of the rectangle using the '#' character.
+
+        If either width or height is 0, returns an empty string.
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        rect_str = ""
+        for _ in range(self.__height):
+            rect_str += "#" * self.__width + "\n"
+        return rect_str.rstrip()
