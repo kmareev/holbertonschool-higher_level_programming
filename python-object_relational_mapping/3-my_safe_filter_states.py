@@ -16,8 +16,8 @@ if __name__ == "__main__":
     mycursor = db.cursor()
 
     query = """SELECT * FROM states
-                     WHERE BINARY NAME = %s
-                     ORDER BY id ASC"""
+                WHERE BINARY NAME = %s
+                ORDER BY id ASC"""
     
     mycursor.execute(query, (sys.argv[4]))
 
