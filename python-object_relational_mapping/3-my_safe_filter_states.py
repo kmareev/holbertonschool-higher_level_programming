@@ -18,7 +18,8 @@ if __name__ == "__main__":
     mycursor.execute("""SELECT * FROM states
                      WHERE BINARY NAME = %s
                      ORDER BY id ASC""".format(sys.argv[4]))
-    
+
+    rows = mycursor.fetchall()
+
     for x in mycursor:
         print(x)
-    
