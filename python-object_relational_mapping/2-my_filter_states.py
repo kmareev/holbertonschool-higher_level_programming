@@ -15,12 +15,18 @@ if __name__ == "__main__":
     )
     mycursor = db.cursor()
 
-    query = ("""SELECT * FROM states
+    mycursor.execute("""SELECT * FROM states
                      WHERE BINARY NAME = '{}'
                      ORDER BY id ASC""".format(sys.argv[4]))
+    for x in mycursor:
+        print(x)
 
-    mycursor.execute(query)
-    rows = mycursor.fetchall()
-
-    for row in rows:
-        print(row)
+    # query = ("""SELECT * FROM states
+                     # WHERE BINARY NAME = '{}'
+                     # ORDER BY id ASC""".format(sys.argv[4]))
+# 
+    # mycursor.execute(query)
+    # rows = mycursor.fetchall()
+# 
+    # for row in rows:
+        # print(row)
