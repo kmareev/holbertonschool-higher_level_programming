@@ -6,6 +6,11 @@ if __name__ == "__main__":
     import MySQLdb
     import sys
 
+    # Input Sanitization to prevent MySQl injections
+    for av in sys.argv:
+        if av.count(";") > 0:
+            exit()
+
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -17,11 +22,12 @@ if __name__ == "__main__":
 
     query = """SELECT * FROM states
                 WHERE BINARY NAME = %s
-                ORDER BY id ASC"""
-    
-    mycursor.execute(query, (sys.argv[4]))
+                ORDER BY id ASC""".format(sys.argv[4])
+
+    mycursor.execute(query)
 
     rows = mycursor.fetchall()
 
     for x in mycursor:
         print(x)
+    
