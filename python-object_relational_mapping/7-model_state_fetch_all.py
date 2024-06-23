@@ -8,7 +8,7 @@ from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    user = argv[1]
+    user = argv [1]
     passwd = argv[2]
     db = argv [3]
 
@@ -23,4 +23,3 @@ if __name__ == "__main__":
         print(f"{state.id}: {state.name}")
 
     session.close()
-
