@@ -29,5 +29,11 @@ if __name__ == "__main__":
 
     rows = mycursor.fetchall()
 
-    for x in mycursor:
-        print(x)
+    i = 0
+    for row in rows:
+        print("{}".format(row[1]), end="")
+        i = i + 1
+        if i != len(rows):
+            print(", ", end="")
+    print("")
+
