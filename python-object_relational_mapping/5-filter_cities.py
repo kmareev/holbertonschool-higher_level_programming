@@ -36,4 +36,3 @@ if __name__ == "__main__":
         if i != len(rows):
             print(", ", end="")
     print("")
-
