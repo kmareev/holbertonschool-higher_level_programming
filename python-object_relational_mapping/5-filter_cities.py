@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Takes in the name of a state as an argument and lists
-all cities of that state, using the database hbtn_0e_4_usa"""
+all cities of that state, using the database hbtn_0e_4_usa."""
 
 if __name__ == "__main__":
     import MySQLdb
