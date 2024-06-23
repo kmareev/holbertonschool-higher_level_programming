@@ -21,12 +21,11 @@ if __name__ == "__main__":
     for x in mycursor:
         print(x)
 
+
     # query = ("""SELECT * FROM states
                      # WHERE BINARY NAME = '{}'
                      # ORDER BY id ASC""".format(sys.argv[4]))
-# 
     # mycursor.execute(query)
     # rows = mycursor.fetchall()
-# 
     # for row in rows:
         # print(row)
