@@ -30,4 +30,3 @@ if __name__ == "__main__":
 
     for x in mycursor:
         print(x)
-    
