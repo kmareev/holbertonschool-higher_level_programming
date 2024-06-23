@@ -9,7 +9,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     user = argv [1]
-    passwd = argv[2]
+    passwd = argv [2]
     db = argv [3]
 
     connect_str = f"mysql+mysqldb://{user}:{passwd}@localhost:3306/{db}"
