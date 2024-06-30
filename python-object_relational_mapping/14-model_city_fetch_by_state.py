@@ -21,9 +21,9 @@ if __name__ == "__main__":
     engine = create_engine(connect_str, pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State, City).join(city).order_by(City.id).all()
+    results = session.query(State, City).join(City).order_by(City.id).all()
 
     for state, city in results:
-        print(f"{state.name}: ({city.id}) ({city.name}")
+        print(f"{state.name}: ({city.id}) {city.name}")
 
     session.close()
