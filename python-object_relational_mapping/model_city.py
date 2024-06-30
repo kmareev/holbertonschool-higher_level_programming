@@ -10,6 +10,7 @@ from model_state import State, Base
 
 Base = declarative_base()
 
+
 class City(Base):
     """Representing the base class of City in a database"""
 
