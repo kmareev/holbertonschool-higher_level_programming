@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Prints all cities from the database hbtn_0e_14_usa"""
 
+
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import (create_engine)
