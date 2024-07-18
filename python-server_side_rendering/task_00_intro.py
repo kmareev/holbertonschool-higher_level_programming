@@ -46,8 +46,9 @@ def generate_invitations(template, attendees):
         print(f"Generated {output_filename}")
 
         idx += 1
-
-except ValueError as e:
-    print(f"Error: {e}")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+        
+    except ValueError as e:
+        print(f"Error: {e}")
+    
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
